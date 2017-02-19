@@ -16,5 +16,10 @@ namespace WindowsFormsTempConverter
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = "" + Tempature.AnyToAny(Double.Parse(textBox1.Text), comboBox2.Text, comboBox1.Text);
+        }
     }
 }
